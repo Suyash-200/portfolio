@@ -251,30 +251,52 @@
 
     $("#sticky_item").stick_in_parent();
   };
-  document.addEventListener("DOMContentLoaded", function () {
-    const menuLinks = document.querySelectorAll(".work-menu a");
-    const projectCards = document.querySelectorAll(".project");
+ document.addEventListener("DOMContentLoaded", function () {
+    const filterLinks = document.querySelectorAll(".portfolio-filter a");
+    const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-    menuLinks.forEach((link) => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
+    filterLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
 
-        menuLinks.forEach((item) => item.classList.remove("active"));
-        this.classList.add("active");
+            // Remove active class from all links
+            filterLinks.forEach((item) => item.classList.remove("active"));
+            // Add active class to clicked link
+            this.classList.add("active");
 
-        const filter = this.getAttribute("data-filter");
+            const filter = this.getAttribute("data-filter");
 
-        projectCards.forEach((card) => {
-          const category = card.getAttribute("data-category");
-          if (filter === "all" || category.includes(filter)) {
-            card.parentElement.style.display = "block";
-          } else {
-            card.parentElement.style.display = "none";
-          }
+            portfolioItems.forEach((item) => {
+                const categories = item.getAttribute("data-category").split(" ");
+                
+                if (filter === "all" || categories.includes(filter)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
         });
-      });
     });
-  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const downloadBtn = document.querySelector('.cv-download-btn');
+    
+    downloadBtn.addEventListener('click', function(e) {
+        // Add visual feedback
+        this.style.animation = 'pulse 0.5s ease';
+        
+        // Remove animation after it completes
+        setTimeout(() => {
+            this.style.animation = 'none';
+        }, 500);
+        
+        // Optional: Track download event
+        console.log('CV download initiated');
+        // You can add analytics here like:
+        // ga('send', 'event', 'Button', 'Download', 'CV');
+    });
+});
 
   var owlCrouselFeatureSlide = function () {
     $(".owl-carousel").owlCarousel({
