@@ -298,6 +298,114 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const socialLinks = document.querySelectorAll('.social-link');
+    
+    socialLinks.forEach(link => {
+        // Set platform-specific hover colors
+        let hoverColor;
+        if (link.querySelector('.icon-linkedin2')) {
+            hoverColor = 'white';
+        } else if (link.querySelector('.icon-github')) {
+            hoverColor = 'white';
+        } else if (link.querySelector('.fa-envelope')) {
+            hoverColor = 'white';
+        }
+        
+        // Mouse enter event
+        link.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-0.25rem)';
+            this.style.background = hoverColor;
+            const icon = this.querySelector('i');
+            if (icon) icon.style.transform = 'scale(1.1)';
+            
+            const tooltip = this.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.style.opacity = '1';
+                tooltip.style.visibility = 'visible';
+                tooltip.style.top = '-2.75rem';
+            }
+        });
+        
+        // Mouse leave event
+        link.addEventListener('mouseleave', function() {
+            this.style.transform = '';
+            this.style.background = 'rgba(255, 255, 255, 0.1)';
+            const icon = this.querySelector('i');
+            if (icon) icon.style.transform = '';
+            
+            const tooltip = this.querySelector('.tooltip');
+            if (tooltip) {
+                tooltip.style.opacity = '0';
+                tooltip.style.visibility = 'hidden';
+                tooltip.style.top = '-2.5rem';
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+    
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+        // Simple validation
+        if (!name || !email || !subject || !message) {
+            formStatus.innerHTML = '<p style="color: #e53e3e;">Please fill in all required fields</p>';
+            return;
+        }
+        
+        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+            formStatus.innerHTML = '<p style="color: #e53e3e;">Please enter a valid email address</p>';
+            return;
+        }
+        
+        // Disable button during submission
+        const submitBtn = document.querySelector('.btn-send-message');
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+        submitBtn.textContent = 'Sending...';
+        
+        // Initialize EmailJS with your public key
+        emailjs.init('POrRa_ezhaaLJ5ZPv');
+        // Send email using EmailJS
+        emailjs.send('service_3ne8i8f', 'template_qxj09ab', {
+            to_email: 'suyashsrivastava200@gmail.com',
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message
+        })
+        .then(function(response) {
+            // Show success message
+            formStatus.innerHTML = '<p style="color: #38a169;">Message sent successfully!</p>';
+            contactForm.reset();
+        }, function(error) {
+            // Show error message
+            formStatus.innerHTML = '<p style="color: #e53e3e;">Error sending message. Please try again.</p>';
+        })
+        .finally(() => {
+            // Reset button
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            submitBtn.textContent = 'Send Message';
+            
+            // Clear status after 5 seconds
+            setTimeout(() => {
+                formStatus.innerHTML = '';
+            }, 5000);
+        });
+    });
+});
+
   var owlCrouselFeatureSlide = function () {
     $(".owl-carousel").owlCarousel({
       animateOut: "fadeOut",
