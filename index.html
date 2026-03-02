@@ -100,6 +100,7 @@
 			transition: all 0.3s ease;
 			text-decoration: none;
 			font-size: 14px;
+			cursor: pointer;
 		}
 
 		.portfolio-filter a.active,
@@ -121,6 +122,7 @@
 			box-shadow: 0 15px 30px rgba(79, 70, 229, 0.1);
 			position: relative;
 			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			cursor: pointer;
 		}
 
 		.portfolio-img {
@@ -128,6 +130,7 @@
 			height: 100%;
 			object-fit: cover;
 			display: block;
+			pointer-events: none;
 		}
 
 		.portfolio-overlay {
@@ -143,15 +146,18 @@
 			justify-content: flex-end;
 			opacity: 0;
 			transition: opacity 0.3s ease;
+			pointer-events: none;
 		}
 
 		.portfolio-content {
 			color: white;
+			pointer-events: none;
 		}
 
 		.portfolio-content h3 {
 			margin-bottom: 10px;
 			font-size: 1.5rem;
+			pointer-events: none;
 		}
 
 		.portfolio-content h3 a {
@@ -159,6 +165,7 @@
 			font-weight: 600;
 			text-decoration: none;
 			transition: color 0.3s ease;
+			pointer-events: none;
 		}
 
 		.portfolio-content h3 a:hover {
@@ -170,17 +177,20 @@
 			display: block;
 			margin-bottom: 8px;
 			font-size: 14px;
+			pointer-events: none;
 		}
 
 		.portfolio-content p {
 			color: rgba(255, 255, 255, 0.7);
 			font-size: 13px;
 			margin-bottom: 15px;
+			pointer-events: none;
 		}
 
 		.portfolio-icons {
 			display: flex;
 			gap: 15px;
+			pointer-events: none;
 		}
 
 		.portfolio-icons a {
@@ -194,6 +204,9 @@
 			justify-content: center;
 			text-decoration: none;
 			transition: background 0.3s ease;
+			pointer-events: auto;
+			position: relative;
+			z-index: 10;
 		}
 
 		/* Hover Effects */
@@ -243,6 +256,7 @@
 			border-radius: 20px;
 			font-size: 12px;
 			font-weight: 600;
+			pointer-events: none;
 		}
 
 		.portfolio-item[data-category="freelance"] .portfolio-overlay::before {
@@ -256,6 +270,7 @@
 			border-radius: 20px;
 			font-size: 12px;
 			font-weight: 600;
+			pointer-events: none;
 		}
 
 		.portfolio-item[data-category="practice"] .portfolio-overlay::before {
@@ -269,6 +284,7 @@
 			border-radius: 20px;
 			font-size: 12px;
 			font-weight: 600;
+			pointer-events: none;
 		}
 
 		/* Responsive Adjustments */
@@ -399,10 +415,9 @@
 													</h1>
 													<p class="text-white"
 														style="font-size: 1.8rem; margin-bottom: 30px;">Front-End
-														Developer |
-														UI/UX Enthusiast</p>
+														Developer with 2 Years Experience</p>
 													<p>
-														<a href="files/suyash-srivastava-cv.pdf"
+														<a href="files/Suyash_Srivastava_CV.pdf"
 															download="Suyash_Srivastava_CV.pdf"
 															class="btn btn-primary btn-learn"
 															style="background: #4f46e5; border: none; padding: 12px 30px; font-size: 1.4rem; font-weight: 600; border-radius: 50px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">
@@ -479,25 +494,33 @@
 										<div class="about-desc">
 											<span class="heading-meta">About Us</span>
 											<h2 class="colorlib-heading">Who Am I?</h2>
-											<p><strong>Hi, I’m Suyash Srivastava,</strong>a frontend developer who
-												believes every pixel has a purpose and every
-												interaction should feel effortless.</p>
+											<p><strong>Hi, I’m Suyash Srivastava,</strong> a Frontend Developer with
+												<strong>2 years of full-time experience</strong> and <strong>6 months
+													of Freelance experience</strong> in creating responsive,
+												mobile-friendly web applications using React, JavaScript, HTML, CSS,
+												Tailwind CSS and Bootstrap. Skilled in REST API integration, state
+												management (Redux, Context API), and performance optimization, with a
+												proven ability to translate Figma designs into production-ready
+												applications.</p>
 											<p>Once upon a time, I began my journey writing code that simply worked. But
 												over time — through real-world projects
-												like <strong>CabKro</strong> and <strong>Coin Looty</strong>, and the
+												like Asset Management Software, ERP Software, and Family Hospital
+												Website, and the
 												challenge of turning static ideas into
 												live, breathing interfaces — I discovered
 												the joy of creating experiences, not just pages.</p>
-											<p>I specialize in <strong>HTML, CSS, Javascipt, React.js, Tailwind CSS,
-													Bootstrap</strong> and design systems that
-												are both powerful and intuitive. With over <strong>2 years of hands-on
+											<p>I specialize in <strong>HTML, CSS, JavaScript, React.js, Tailwind CSS,
+													Bootstrap, Redux, and Context API</strong> for building
+												interfaces that are both powerful and intuitive. With over <strong>2
+													years of hands-on
 													experience</strong>, I’ve built
-												dashboards, portfolio sites, ERP modules, and components that not only
-												look good —
-												but work well across devices and users.</p>
-											<p>My tools are modern: React Icons, Chart.js, Vite, context APIs — but my
+												dashboards, ERP modules, hospital websites, and components that not only
+												look good — but work well across devices and users.</p>
+											<p>My tools are modern: React, Redux, Context API, TypeScript, Vite — but my
 												goal is timeless: create digital
-												experiences that are clean, fast, and human-centered.</p>
+												experiences that are clean, fast, and human-centered. I'm a
+												<strong>immediate joiner</strong> and continuously upgrading skills by
+												working on modern projects in TypeScript.</p>
 											<p>Let’s turn vision into interaction, one smooth UI at a time.</p>
 										</div>
 									</div>
@@ -554,8 +577,7 @@
 									<div class="desc">
 										<h3>Modern UI/UX</h3>
 										<p>Crafting responsive and intuitive user interfaces with React.js and Tailwind
-											CSS for seamless
-											experiences across all devices.</p>
+											CSS for seamless experiences across all devices.</p>
 									</div>
 								</div>
 							</div>
@@ -566,9 +588,8 @@
 									</span>
 									<div class="desc">
 										<h3>Frontend Development</h3>
-										<p>Building fast, component-based applications using React, Vite, React Router,
-											and context APIs
-											for scalable web solutions.</p>
+										<p>Building fast, component-based applications using React, Redux, Context API,
+											and React Router for scalable web solutions.</p>
 									</div>
 								</div>
 							</div>
@@ -580,8 +601,7 @@
 									<div class="desc">
 										<h3>Mobile-First Design</h3>
 										<p>Ensuring smooth performance and adaptive layouts for mobile users with
-											Tailwind's
-											utility-first CSS approach.</p>
+											Tailwind's utility-first CSS approach.</p>
 									</div>
 								</div>
 							</div>
@@ -594,9 +614,8 @@
 									</span>
 									<div class="desc">
 										<h3>Real-Time Dashboards</h3>
-										<p>Developed dynamic dashboards for ERP & analytics platforms using Chart.js and
-											state-managed
-											components.</p>
+										<p>Developed dynamic dashboards for ERP & Asset Management platforms using
+											JavaScript and jQuery with state-managed components.</p>
 									</div>
 								</div>
 							</div>
@@ -607,9 +626,20 @@
 									</span>
 									<div class="desc">
 										<h3>Project Experience</h3>
-										<p>Worked on real-world applications like CabKro and Manageko, transforming
-											design visions into
-											functional frontend systems.</p>
+										<p>Worked on real-world applications like Asset Management Software, ERP
+											Software, and Hotel Management systems.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-6">
+									<span class="icon">
+										<i class="icon-code"></i>
+									</span>
+									<div class="desc">
+										<h3>API Integration</h3>
+										<p>Skilled in REST API integration, Google Authentication, and real-time data
+											handling with Redux.</p>
 									</div>
 								</div>
 							</div>
@@ -660,10 +690,10 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<p>With a strong background in frontend development, I turn creative ideas into
-									functional, high-performing web applications using modern tools like React, Tailwind
-									CSS, Vite, and Chart.js. I believe in clean, scalable code and intuitive user
-									experience.</p>
+								<p>With a strong background in frontend development with 2 years of full-time
+									experience and 6 months of freelance work, I turn creative ideas into functional,
+									high-performing web applications using modern tools like React, Tailwind CSS, Redux,
+									and TypeScript. I believe in clean, scalable code and intuitive user experience.</p>
 							</div>
 
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
@@ -704,9 +734,33 @@
 
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
-									<h3>Vite & React Router</h3>
+									<h3>TypeScript</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Redux & Context API</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>REST API Integration</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
 											aria-valuemin="0" aria-valuemax="100" style="width:85%">
 											<span>85%</span>
 										</div>
@@ -716,11 +770,11 @@
 
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
-									<h3>Chart.js & ECharts</h3>
+									<h3>HTML5 & CSS3</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+											aria-valuemin="0" aria-valuemax="100" style="width:95%">
+											<span>95%</span>
 										</div>
 									</div>
 								</div>
@@ -728,11 +782,11 @@
 
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
-									<h3>API Integration & Context API</h3>
+									<h3>Bootstrap & jQuery</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
 										</div>
 									</div>
 								</div>
@@ -763,6 +817,7 @@
 														href="#collapseOne" aria-expanded="true"
 														aria-controls="collapseOne">
 														Master of Computer Applications – Chandigarh University
+														(2023-2025)
 													</a>
 												</h4>
 											</div>
@@ -771,9 +826,9 @@
 												<div class="panel-body">
 													<div class="row">
 														<div class="col-md-6">
-															<p>Complete a Master's degree in Computer Applications with
-																a focus on full-stack development, data structures, and
-																modern web technologies.</p>
+															<p>Pursuing Master's degree in Computer Applications
+																(Online) with a focus on full-stack development, data
+																structures, and modern web technologies.</p>
 														</div>
 														<div class="col-md-6">
 															<p>Engaged in real-time projects using React.js, Tailwind
@@ -874,54 +929,93 @@
 							<div class="col-md-12">
 								<div class="timeline-centered">
 
+									<!-- React Developer at Hachion - Added from resume -->
 									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-1"><i class="icon-pen2"></i></div>
 											<div class="timeline-label">
-												<h2><a href="#">Frontend Developer (Freelancer) – Opinion Universe</a>
-													<span>Feb 2025 – April 2025</span>
+												<h2><a href="#">React Developer – Hachion</a>
+													<span>(Full-Time)</span>
 												</h2>
-												<p>Developed and maintained the user interface for
-													<strong>coinlooty.com</strong>, a rewards platform. Integrated APIs
-													for dynamic UI and ensured mobile responsiveness.<br>
-													<strong>Technologies:</strong> React.js, Tailwind CSS, JavaScript,
-													Redux, Google Authentication
-												</p>
+												<p>Working as a React Developer at Hachion, an online learning and
+													technology training company focused on providing skill-based
+													education. Building responsive and user-friendly web interfaces
+													using React.js, Modular CSS, and Bootstrap.</p>
+												<p><strong>Technologies:</strong> React.js, Modular CSS, Bootstrap</p>
 											</div>
 										</div>
 									</article>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+									<!-- Front End Developer at Maco Infotech - Updated with resume details -->
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-2"><i class="icon-pen2"></i></div>
 											<div class="timeline-label">
-												<h2><a href="#">React.js Developer (Freelancer)</a> <span>Sep 2024 – Jan
-														2025</span></h2>
-												<p>Designed and developed a ride-hailing frontend interface. Handled
-													complete UI lifecycle including API integration and
-													responsiveness.<br>
-													<strong>Technologies:</strong> React.js, JavaScript, Bootstrap,
-													State Management, REST APIs
-												</p>
+												<h2><a href="#">Front End Developer – Maco Infotech</a> <span>Sep 2022 –
+														May 2024 (Full-Time)</span></h2>
+												<p>Developed and maintained large-scale applications including:<br>
+													• <strong>Asset Management Software:</strong> Using JavaScript,
+													HTML, CSS, Bootstrap, and jQuery.<br>
+													• <strong>ERP Software:</strong> Improved user-facing features with
+													responsive design.<br>
+													• <strong>Hotel Management Application:</strong> Developed using
+													React.js, JavaScript, and Bootstrap, with LocalStorage for
+													client-side data persistence.</p>
+												<p><strong>Technologies:</strong> React.js, JavaScript, HTML, CSS,
+													Bootstrap, jQuery, Tailwind CSS, LocalStorage</p>
 											</div>
 										</div>
 									</article>
 
-									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+									<!-- React.js Developer (Freelancer) - Opinion Universe -->
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
 										<div class="timeline-entry-inner">
 											<div class="timeline-icon color-3"><i class="icon-pen2"></i></div>
 											<div class="timeline-label">
-												<h2><a href="#">Frontend Developer – Maco Infotech</a> <span>Sep 2022 –
-														May 2024</span></h2>
-												<p>Worked on several web-based projects:<br>
-													• <strong>ERP Software:</strong> Improved user-facing features using
-													HTML, CSS, JavaScript, and Bootstrap.<br>
-													• <strong>Asset Management:</strong> Developed responsive dashboards
-													with jQuery and JS.<br>
-													• <strong>Family Hospital Website:</strong> Built responsive UI with
-													React.js and Tailwind CSS.<br>
-													• <strong>Hotel Management:</strong> Developed UI using React.js,
-													HTML5, and CSS3.</p>
+												<h2><a href="#">React.js Developer – Opinion Universe (Freelancer)</a>
+													<span>Feb 2025 – April 2025</span>
+												</h2>
+												<p>Built a fully responsive, mobile-first web application using React
+													and Tailwind CSS. Integrated REST APIs, Google Authentication, and
+													Redux for secure login, real-time data handling, efficient state
+													management. Translated Figma designs into scalable,
+													cross-browser-compatible interfaces.</p>
+												<p><strong>Technologies:</strong> React.js, Tailwind CSS, Redux, Google
+													Authentication, REST APIs, Figma</p>
+											</div>
+										</div>
+									</article>
+
+									<!-- React.js Developer (Freelance) - Admin Panel -->
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-4"><i class="icon-pen2"></i></div>
+											<div class="timeline-label">
+												<h2><a href="#">React.js Developer (Freelancer)</a> <span>Sep 2024 – Jan
+														2025</span></h2>
+												<p>Developed a responsive Admin Panel using React and Bootstrap with
+													Context API for efficient state management. Integrated REST APIs for
+													real-time functionality and optimized performance for large datasets
+													through table virtualization to improve load times and usability.
+												</p>
+												<p><strong>Technologies:</strong> React.js, Bootstrap, Context API, REST
+													APIs, Table Virtualization</p>
+											</div>
+										</div>
+									</article>
+
+									<!-- Web Developer (Contract) - Abaca Systems -->
+									<article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+										<div class="timeline-entry-inner">
+											<div class="timeline-icon color-5"><i class="icon-pen2"></i></div>
+											<div class="timeline-label">
+												<h2><a href="#">Web Developer (Contract) – Abaca Systems Private
+														Limited</a> <span>2024</span></h2>
+												<p>Converted Adobe XD designs into pixel-perfect, responsive HTML pages
+													using CSS for all screen sizes, with a focus on large-screen
+													optimization.</p>
+												<p><strong>Technologies:</strong> HTML, CSS, Adobe XD, Responsive Design
+												</p>
 											</div>
 										</div>
 									</article>
@@ -965,43 +1059,51 @@
 
 						<div class="row portfolio-items">
 							<!-- Freelance Projects -->
-							<!-- CoinLooty -->
+							<!-- Opinion Universe / CoinLooty -->
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="freelance">
+								<div class="portfolio-item" data-category="freelance"
+									data-project-url="https://coinlooty.com">
 									<img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
-										alt="CoinLooty - Opinion Reward Platform" class="portfolio-img">
+										alt="Opinion Universe - Opinion Reward Platform" class="portfolio-img">
 									<div class="portfolio-overlay">
 										<div class="portfolio-content">
-											<h3><a href="https://coinlooty.com" target="_blank">CoinLooty</a></h3>
-											<span>Opinion Reward Platform | React.js, Tailwind CSS, Redux</span>
-											<p>Freelance Project for Opinion Universe</p>
+											<h3><a href="https://coinlooty.com" target="_blank">Opinion Universe</a>
+											</h3>
+											<span>React.js, Tailwind CSS, Redux, Google Auth</span>
+											<p>Freelance Project: Built fully responsive mobile-first web app with REST
+												APIs, Google Authentication, and Redux for secure login and real-time
+												data handling</p>
 											<div class="portfolio-icons">
-												<a href="https://coinlooty.com" target="_blank"><i
+												<a href="https://coinlooty.com" target="_blank" class="project-link"><i
 														class="icon-share3"></i></a>
-												<a href="https://coinlooty.com" target="_blank"><i
+												<a href="https://coinlooty.com" target="_blank" class="project-link"><i
 														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<!-- Ride-Hailing App -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="portfolio-item" data-category="freelance">
-									<img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-										alt="Ride-Hailing App" class="portfolio-img">
+							<!-- Abaca Systems - Contract Work -->
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="portfolio-item" data-category="freelance"
+									data-project-url="https://sunildhawan.com/">
+									<img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+										alt="Adobe XD to HTML Conversion" class="portfolio-img">
 									<div class="portfolio-overlay">
 										<div class="portfolio-content">
-											<h3><a href="#">Ride-Hailing App</a></h3>
-											<span>React.js, Bootstrap, REST API Integration</span>
-											<p>Freelance Project</p>
+											<h3><a href="https://sunildhawan.com/" target="_blank">Adobe XD to HTML
+													Conversion</a></h3>
+											<span>HTML, CSS, Adobe XD, Responsive Design</span>
+											<p>Contract Project at Abaca Systems: Converted Adobe XD designs into
+												pixel-perfect, responsive HTML pages with focus on large-screen
+												optimization</p>
 											<div class="portfolio-icons">
-												<a href="#"><i class="icon-share3"></i></a>
-												<a href="https://cabkro.com/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" class="project-link"><i class="icon-share3"></i></a>
+												<a href="https://sunildhawan.com/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
@@ -1010,62 +1112,23 @@
 
 							<!-- Full-Time Projects (Maco Infotech) -->
 							<!-- Asset Management Software -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="fulltime">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="portfolio-item" data-category="fulltime"
+									data-project-url="https://macoinfotech.com/">
 									<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
 										alt="Asset Management Software" class="portfolio-img">
 									<div class="portfolio-overlay">
 										<div class="portfolio-content">
-											<h3><a href="#">Asset Management Software</a></h3>
+											<h3><a href="https://macoinfotech.com/" target="_blank">Asset Management
+													Software</a></h3>
 											<span>JavaScript, HTML, CSS, Bootstrap, jQuery</span>
-											<p>Full-Time Project at Maco Infotech</p>
+											<p>Full-Time Project at Maco Infotech: Large-scale asset management
+												application with responsive dashboards</p>
 											<div class="portfolio-icons">
-												<a href="#"><i class="icon-share3"></i></a>
-												<a href="https://macoinfotech.com/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Family Hospital Website -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="portfolio-item" data-category="fulltime">
-									<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
-										alt="Family Hospital Website" class="portfolio-img">
-									<div class="portfolio-overlay">
-										<div class="portfolio-content">
-											<h3><a href="#">Family Hospital Website</a></h3>
-											<span>React.js, Tailwind CSS</span>
-											<p>Full-Time Project at Maco Infotech</p>
-											<div class="portfolio-icons">
-												<a href="#"><i class="icon-share3"></i></a>
-												<a href="https://family-hospital.com/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Hotel Management Software -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="fulltime">
-									<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-										alt="Hotel Management Software" class="portfolio-img">
-									<div class="portfolio-overlay">
-										<div class="portfolio-content">
-											<h3><a href="#">Hotel Management Software</a></h3>
-											<span>HTML5, CSS3, JavaScript, React.js</span>
-											<p>Full-Time Project at Maco Infotech</p>
-											<div class="portfolio-icons">
-												<a href="#"><i class="icon-share3"></i></a>
-												<a href="https://macotech.in/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" class="project-link"><i class="icon-share3"></i></a>
+												<a href="https://macoinfotech.com/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
@@ -1073,30 +1136,133 @@
 							</div>
 
 							<!-- ERP Software -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="portfolio-item" data-category="fulltime">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="portfolio-item" data-category="fulltime"
+									data-project-url="http://biztechnik.in/">
 									<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1415&q=80"
 										alt="ERP Software" class="portfolio-img">
 									<div class="portfolio-overlay">
 										<div class="portfolio-content">
-											<h3><a href="#">ERP Software</a></h3>
+											<h3><a href="http://biztechnik.in/" target="_blank">ERP Software</a></h3>
 											<span>HTML, CSS, Bootstrap, JavaScript</span>
-											<p>Full-Time Project at Maco Infotech</p>
+											<p>Full-Time Project at Maco Infotech: Enterprise resource planning software
+												with improved user-facing features</p>
 											<div class="portfolio-icons">
-												<a href="#"><i class="icon-share3"></i></a>
-												<a href="http://biztechnik.in/" target="_blank"><i
+												<a href="#" class="project-link"><i class="icon-share3"></i></a>
+												<a href="http://biztechnik.in/" target="_blank" class="project-link"><i
 														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<!-- Practice Projects -->
-							<!-- Shopping App -->
+							<!-- Hotel Management Application -->
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="practice">
+								<div class="portfolio-item" data-category="fulltime"
+									data-project-url="https://macotech.in/">
+									<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+										alt="Hotel Management Application" class="portfolio-img">
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<h3><a href="https://macotech.in/" target="_blank">Hotel Management
+													Application</a></h3>
+											<span>React.js, JavaScript, Bootstrap, LocalStorage</span>
+											<p>Full-Time Project at Maco Infotech: Team collaboration project with
+												client-side data persistence using LocalStorage</p>
+											<div class="portfolio-icons">
+												<a href="#" class="project-link"><i class="icon-share3"></i></a>
+												<a href="https://macotech.in/" target="_blank" class="project-link"><i
+														class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Hachion Project -->
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="portfolio-item" data-category="fulltime"
+									data-project-url="https://www.hachion.co/">
+									<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+										alt="Hachion Learning Platform" class="portfolio-img">
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<h3><a href="https://www.hachion.co/" target="_blank">Hachion Learning
+													Platform</a></h3>
+											<span>React.js, Modular CSS, Bootstrap</span>
+											<p>Full-Time Project: Building responsive and user-friendly web interfaces
+												for online learning and technology training platform</p>
+											<div class="portfolio-icons">
+												<a href="#" class="project-link"><i class="icon-share3"></i></a>
+												<a href="https://www.hachion.co/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Practice Projects from Resume -->
+							<!-- Role based Management App -->
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://role-based-project-management.vercel.app/">
+									<img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+										alt="Role based Management App" class="portfolio-img">
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<h3><a href="https://role-based-project-management.vercel.app/"
+													target="_blank">Role based Management App</a></h3>
+											<span>React, Javascript, Redux, LocalStorage, Tailwind CSS</span>
+											<p>Learning Project: Developed independently with role-based access control
+												and dynamic page rendering for customized user experiences.</p>
+											<div class="portfolio-icons">
+												<a href="https://github.com/role-based-project-management"
+													target="_blank" class="project-link"><i class="icon-github"></i></a>
+												<a href="https://role-based-project-management.vercel.app/"
+													target="_blank" class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Kanban Board -->
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://react-kanban-orcin.vercel.app/">
+									<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1510&q=80"
+										alt="Kanban Board Component" class="portfolio-img">
+									<div class="portfolio-overlay">
+										<div class="portfolio-content">
+											<h3><a href="https://react-kanban-orcin.vercel.app/" target="_blank">Kanban
+													Board Component</a></h3>
+											<span>React, TypeScript, Tailwind CSS, Context API, Drag & Drop</span>
+											<p>A feature-rich Kanban board with drag-and-drop functionality, inline
+												editing, and mobile-responsive design. Features three columns (Todo, In
+												Progress, Done) with card creation, deletion, and order preservation.
+											</p>
+											<div class="portfolio-icons">
+												<a href="https://github.com/yourusername/kanban-board" target="_blank"
+													class="project-link"><i class="icon-github"></i></a>
+												<a href="https://react-kanban-orcin.vercel.app/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Shopping App -->
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://shopping-app-gamma.vercel.app">
 									<img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
 										alt="Shopping App" class="portfolio-img">
 									<div class="portfolio-overlay">
@@ -1107,10 +1273,11 @@
 											<p>Features add to cart, quantity updates, and user authentication. Built
 												using React Context API for efficient global state management.</p>
 											<div class="portfolio-icons">
-												<a href="#" target="_blank"><i class="icon-share3"></i></a>
-												<a href="https://shopping-app-gamma.vercel.app" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" target="_blank" class="project-link"><i
+														class="icon-share3"></i></a>
+												<a href="https://shopping-app-gamma.vercel.app" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
@@ -1118,29 +1285,32 @@
 							</div>
 							<!-- Task Manager App -->
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="practice">
-									<img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://task-manager-fz5i.vercel.app/">
+									<img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80"
 										alt="Task Manager App" class="portfolio-img">
 									<div class="portfolio-overlay">
 										<div class="portfolio-content">
 											<h3><a href="https://task-manager-fz5i.vercel.app/" target="_blank">Task
 													Manager App</a></h3>
-											<span>React.js, TypeScript, Js Liabrary, State Management</span>
+											<span>React.js, TypeScript, State Management</span>
 											<p>A task management application to organize, track, and manage tasks
 												efficiently.</p>
 											<div class="portfolio-icons">
-												<a href="#" target="_blank"><i class="icon-share3"></i></a>
-												<a href="https://task-manager-fz5i.vercel.app/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" target="_blank" class="project-link"><i
+														class="icon-share3"></i></a>
+												<a href="https://task-manager-fz5i.vercel.app/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- Pokémon App -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="portfolio-item" data-category="practice">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://pokemon-app-smoky-six.vercel.app/">
 									<img src="https://images.unsplash.com/photo-1542779283-429940ce8336?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
 										alt="Pokémon App" class="portfolio-img">
 
@@ -1152,18 +1322,20 @@
 											<p>An interactive Pokémon app featuring infinite scroll and draggable cards
 												for managing personalized Pokémon collections.</p>
 											<div class="portfolio-icons">
-												<a href="#" target="_blank"><i class="icon-share3"></i></a>
-												<a href="https://pokemon-app-smoky-six.vercel.app/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" target="_blank" class="project-link"><i
+														class="icon-share3"></i></a>
+												<a href="https://pokemon-app-smoky-six.vercel.app/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 							<!-- Lead CRM Project -->
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="portfolio-item" data-category="practice">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="portfolio-item" data-category="practice"
+									data-project-url="https://lead-crm-project.vercel.app/">
 									<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
 										alt="Lead CRM Project" class="portfolio-img">
 									<div class="portfolio-overlay">
@@ -1174,10 +1346,11 @@
 											<p>A responsive CRM dashboard converted from Figma design to code using
 												Bootstrap framework with smooth vanilla JS animations.</p>
 											<div class="portfolio-icons">
-												<a href="#" target="_blank"><i class="icon-share3"></i></a>
-												<a href="https://lead-crm-project.vercel.app/" target="_blank"><i
-														class="icon-eye"></i></a>
-												<a href="#"><i class="icon-heart"></i></a>
+												<a href="#" target="_blank" class="project-link"><i
+														class="icon-share3"></i></a>
+												<a href="https://lead-crm-project.vercel.app/" target="_blank"
+													class="project-link"><i class="icon-eye"></i></a>
+												<a href="#" class="project-link"><i class="icon-heart"></i></a>
 											</div>
 										</div>
 									</div>
@@ -1302,6 +1475,63 @@
 
 	<!-- Add EmailJS SDK -->
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<!-- Portfolio Filter and Click Functionality -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Portfolio Filter Functionality
+			const filterLinks = document.querySelectorAll('.portfolio-filter a');
+			const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+			filterLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					// Remove active class from all filter links
+					filterLinks.forEach(l => l.classList.remove('active'));
+
+					// Add active class to clicked link
+					this.classList.add('active');
+
+					// Get filter value
+					const filterValue = this.getAttribute('data-filter');
+
+					// Filter portfolio items
+					portfolioItems.forEach(item => {
+						if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+							item.closest('.col-md-6').style.display = 'block';
+						} else {
+							item.closest('.col-md-6').style.display = 'none';
+						}
+					});
+				});
+			});
+
+			// Make entire project card clickable
+			portfolioItems.forEach(item => {
+				item.addEventListener('click', function (e) {
+					// Don't redirect if clicking on a link inside the card
+					if (e.target.tagName === 'A' || e.target.closest('a')) {
+						return;
+					}
+
+					// Get the project URL from data attribute
+					const projectUrl = this.getAttribute('data-project-url');
+					if (projectUrl && projectUrl !== '#') {
+						window.open(projectUrl, '_blank');
+					}
+				});
+			});
+
+			// Prevent click event from bubbling up when clicking on icons
+			const projectLinks = document.querySelectorAll('.project-link');
+			projectLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					e.stopPropagation();
+				});
+			});
+		});
+	</script>
 
 </body>
 
